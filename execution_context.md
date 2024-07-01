@@ -56,8 +56,8 @@ The execution context goes through two main phases:
     - Create a new function execution context for each function call.
 
 
-![Example of the two phases](image-1.png)
-![Function Ec two phases](image-2.png)
+![Example of the two phases](./images/image-1.png)
+![Function Ec two phases](./images/image-2.png)
 
 ## Hoisting
 
@@ -93,5 +93,5 @@ let x = 100;
 In the example above, using `let` instead of `var` results in a `ReferenceError`.
 Some references say that `let` and `const` are not hoisted, but they are hoisted to the top of the block scope, not the global scope. They exist in another area of memory called the Temporal Dead Zone (TDZ).
 
-![var variable lifecycle vs let/const variable lifecycle](image-3.png)
+![var variable lifecycle vs let/const variable lifecycle](./images/image-3.png)
 

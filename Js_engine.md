@@ -128,7 +128,7 @@ JavaScript engines use several garbage collection algorithms to reclaim memory:
 ## JavaScript Engine v8
 
 
-![JavaScript Engine Components](image.png)
+![JavaScript Engine Components](./images/image.png)
 
 This image provides an overview of the JavaScript engine's operation process, illustrating how JavaScript code is transformed and executed. Let's break it down step-by-step:
 
