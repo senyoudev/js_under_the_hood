@@ -128,6 +128,49 @@ JavaScript engines use several garbage collection algorithms to reclaim memory:
 ## JavaScript Engine v8
 
 
+![JavaScript Engine Components](image.png)
+
+This image provides an overview of the JavaScript engine's operation process, illustrating how JavaScript code is transformed and executed. Let's break it down step-by-step:
+
+### 1. **Source Code**
+The process begins with the JavaScript source code, which is the script written by the developer.
+
+### 2. **Parser**
+The source code is fed into the parser, which performs lexical analysis and syntax analysis:
+- **Lexical Analysis:** Converts the source code into tokens.
+- **Syntax Analysis:** Uses these tokens to generate an Abstract Syntax Tree (AST).
+
+### 3. **Abstract Syntax Tree (AST)**
+The AST is a hierarchical tree structure that represents the syntactic structure of the code. It is used to understand the code's structure and semantics.
+
+### 4. **Interpreter**
+The AST is passed to the interpreter (in V8, this would be the Ignition interpreter), which converts the AST into bytecode. Bytecode is an intermediate representation that is easier to execute than high-level source code.
+
+### 5. **Bytecode**
+The bytecode is executed by the interpreter. While the bytecode is running, the engine collects profiling data about the code's execution, such as which functions are called frequently and the types of variables.
+
+### 6. **Optimizing Compiler (JIT Compilation)**
+Based on the profiling data, the optimizing compiler (in V8, this would be the TurboFan compiler) kicks in to further optimize the bytecode:
+- **Optimization:** The compiler applies various optimizations, such as inlining functions, type specialization, and eliminating dead code.
+- **Compilation to Machine Code:** The optimized code is then compiled into highly efficient machine code, which can be executed directly by the CPU.
+
+### 7. **Machine Code**
+The machine code is the final, highly optimized version of the code that runs directly on the CPU. This results in much faster execution compared to interpreting the bytecode alone.
+
+### 8. **Memory Management**
+During the entire process, memory is managed using stack and heap structures:
+- **Stack:** Used for managing function calls and local variables.
+- **Heap:** Used for dynamically allocated memory, such as objects and arrays.
+
+### Summary
+- **Source Code:** Written by the developer.
+- **Parser:** Converts source code into an AST.
+- **AST:** Represents the code structure.
+- **Interpreter:** Converts AST into bytecode.
+- **Bytecode:** Executed by the interpreter while collecting profiling data.
+- **Optimizing Compiler:** Uses profiling data to optimize bytecode and compile it into machine code.
+- **Machine Code:** The final optimized code executed by the CPU.
+- **Memory Management:** Handled using stack and heap.
 
 
 
