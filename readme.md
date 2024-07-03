@@ -10,3 +10,4 @@ This repository serves as a summary of my journey exploring the internals of Jav
 4. [ Asynchronous JavaScript, Task Queue & Event Loop](./async_js.md)
 5. [Memory Management](./memory_storage.md)
 6. [OOP Core Concepts](./oop_core_concepts.md)
+7. [ES6 Features](./es6_features.md)
