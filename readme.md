@@ -9,3 +9,4 @@ This repository serves as a summary of my journey exploring the internals of Jav
 3. [Execution Context](./execution_context.md)
 4. [ Asynchronous JavaScript, Task Queue & Event Loop](./async_js.md)
 5. [Memory Management](./memory_storage.md)
+6. [OOP Core Concepts](./oop_core_concepts.md)
