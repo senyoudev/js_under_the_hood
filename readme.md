@@ -12,3 +12,4 @@ This repository serves as a summary of my journey exploring the internals of Jav
 6. [OOP Core Concepts](./oop_core_concepts.md)
 7. [ES6 Features](./es6_features.md)
 8. [Functional Programming](./functional_programming.md)
+9.[Closure](./closure.md)
