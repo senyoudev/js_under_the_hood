@@ -75,3 +75,4 @@ const addAndMultiply = x => multiply(add(x));
 console.log(addAndMultiply(2)); // 6
 ```
 
+
